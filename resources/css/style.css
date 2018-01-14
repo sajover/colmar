@@ -1,0 +1,215 @@
+html {
+  font-size: 16px;
+  color: dimgray;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.4;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4  {
+  font-size: 1.15rem;
+  color: black;
+}
+
+h5 {
+  font-size: 0.75rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+
+}
+
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*
+.container {
+  width: 960px;
+  border: 1px solid aquamarine;
+  }
+  */
+
+
+header {
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 4rem;
+  position: fixed;
+  z-index: 1;
+  border: 1px solid blue;
+  width: 100%;
+  background-color: #FFEFD5;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav img {
+  width: 3rem;
+  height: auto;
+  padding-left: 1.5rem;
+}
+nav span {
+  font-size: 2rem;
+}
+.lighter {
+  color:lightgrey;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  align-items: center;
+  padding-right: 0.5rem;
+}
+
+li {
+  padding-right: 1rem;
+
+}
+
+/* Learn */
+
+#learn {
+  padding-top:4rem;
+  display: flex;
+  flex-direction: row;
+  background-color: lightPink;
+}
+
+.image-content {
+  width: 60%;
+  border: 2px solid red;
+  margin: 2rem 1.5rem;
+}
+
+#learn img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.text-content {
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  padding-bottom: 2rem;
+}
+
+.button {
+  background-color: #FA8072;
+  padding: 0.5rem 6rem;
+  color: white;
+}
+
+
+
+#practicing  {
+display: flex;
+
+}
+
+#practicing .main {
+  width: 65%;
+  align-items: flex-start;
+  border: 1px solid blue;
+}
+
+#practicing .image-content {
+width: 97%;
+}
+
+#practicing img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#practicing .text-content {
+display: flex;
+align-items: flex-start;
+width: 90%;
+}
+
+#practicing .column-about {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+
+}
+
+#practicing .about {
+  display: flex;
+  padding: 1rem 1rem;
+}
+#practicing .about .image-content {
+  width: 35%;
+  margin: 0rem 0rem;
+  background-color: pink;
+}
+
+#practicing .about .text-content {
+  width: 65%;
+  padding: 0rem 1rem;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+}
+
+#practicing .about img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#practicing .about p {
+  padding: 0.5rem 0rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+span.read {
+  color: blue;
+  font-size: 0.75rem;
+}
+
+/* COURSES */
+
+#Courses {
+  display: flex;
+  flex-wrap: wrap;
+
+}
