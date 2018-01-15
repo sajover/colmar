@@ -14,8 +14,8 @@ h1 {
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -24,14 +24,11 @@ h3 {
 
 h4  {
   font-size: 1.15rem;
-  color: black;
 }
 
 h5 {
   font-size: 0.75rem;
   padding-top: 1.5rem;
-  padding-bottom: 2rem;
-
 }
 
 p {
@@ -41,7 +38,10 @@ p {
 .title {
   width: 100%;
   text-align: center;
-  margin: 2rem 2rem;
+}
+
+.title h2 {
+  margin-bottom: 2rem;
 }
 
 img {
@@ -65,9 +65,7 @@ video {  width: 100%;
 .main {
   width: 60%;
   align-items: flex-start;
-  border: 1px solid blue;
-  background-color: seashell;
-  margin: 1.5rem;
+  margin: 2rem 1.5rem;
 }
 /*
 .container {
@@ -87,9 +85,8 @@ nav {
   height: 4rem;
   position: fixed;
   z-index: 1;
-  border: 1px solid blue;
   width: 100%;
-  background-color: #FFEFD5;
+  background-color: white;
 }
 
 .logo {
@@ -125,13 +122,10 @@ li {
 /* Learn */
 
 #learn {
-  padding-top:6rem;
+  padding-top:4rem;
   display: flex;
   flex-direction: row;
   background-color: lightPink;
-}
-
-.image-content {
 }
 
 .left-side {
@@ -159,25 +153,25 @@ li {
 
 
 #practicing, #thesis  {
-display: flex;
+  display: flex;
 
-}
+  }
 
 
 #practicing .text-content, #thesis .text-content {
-display: flex;
-align-items: flex-start;
-width: 90%;
-}
+  display: flex;
+  align-items: flex-start;
+  width: 90%;
+  }
 
 #practicing .column-about, #thesis .column-about {
   width: 35%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
   margin-top: 1rem;
-  margin-left: 1.5rem;
-
+  margin-left: 1rem;
 }
 
 #practicing .about, #thesis .about {
@@ -187,7 +181,6 @@ width: 90%;
 #practicing .about .image-content, #thesis .about .image-content {
   width: 35%;
   margin: 0rem 0rem;
-  background-color: pink;
 }
 
 #practicing .about .text-content, #thesis .about .text-content {
@@ -196,12 +189,6 @@ width: 90%;
   text-align: left;
   display: flex;
   align-items: flex-start;
-}
-
-#practicing .about img, #thesis .about img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
 }
 
 #practicing .about p, #thesis .about p {
@@ -224,22 +211,14 @@ span.read {
 
 }
 
-
-
 #courses .course{
-  margin: 1rem;
+  margin: 0rem 1rem 2rem 1rem;
   width: 27.5%;
 
 }
 
-#courses .course img{
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
 #courses .course .text-content {
-  padding: 1rem;
+  padding: 1rem 1rem 1.5rem 1rem;
   display: flex;
   align-items: flex-start;
 }
@@ -249,6 +228,15 @@ span.read {
   margin: 0.5rem 0rem;
 }
 
+#thesis .main {
+  margin-top: 0rem;
+}
+
+#thesis h4{
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
 footer {
   display: flex;
   color: dimgray;
@@ -256,4 +244,8 @@ footer {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+}
+
+footer ul {
+  padding-right: 1.5rem;
 }
