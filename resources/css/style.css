@@ -15,6 +15,7 @@ h2 {
   font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 h3 {
@@ -131,10 +132,11 @@ li {
 }
 
 .image-content {
-  border: 2px solid red;
 }
 
-
+.left-side {
+  display: flex;
+}
 
 .text-content {
   padding-left: 1.5rem;
@@ -162,13 +164,6 @@ display: flex;
 }
 
 
-
-#practicing .image-content, #thesis .image-content {
-width: 100%;
-
-}
-
-
 #practicing .text-content, #thesis .text-content {
 display: flex;
 align-items: flex-start;
@@ -181,6 +176,7 @@ width: 90%;
   flex-direction: column;
   justify-content:flex-start;
   margin-top: 1rem;
+  margin-left: 1.5rem;
 
 }
 
@@ -188,7 +184,7 @@ width: 90%;
   display: flex;
   padding: 1rem 0rem;
 }
-#practicing .about .image-content, #thesis .about .image.content {
+#practicing .about .image-content, #thesis .about .image-content {
   width: 35%;
   margin: 0rem 0rem;
   background-color: pink;
@@ -224,7 +220,7 @@ span.read {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding: 2.5rem;
+  justify-content: center;
 
 }
 
@@ -232,7 +228,6 @@ span.read {
 
 #courses .course{
   margin: 1rem;
-  border: 1px solid red;
   width: 27.5%;
 
 }
@@ -244,14 +239,21 @@ span.read {
 }
 
 #courses .course .text-content {
-  margin: 1rem;
+  padding: 1rem;
   display: flex;
   align-items: flex-start;
-  background-color: yellow;
 }
 
 #courses .course span {
   text-align: left;
   margin: 0.5rem 0rem;
-  background-color: pink;
+}
+
+footer {
+  display: flex;
+  color: dimgray;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
 }
