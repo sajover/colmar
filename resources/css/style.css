@@ -33,12 +33,40 @@ h5 {
 
 }
 
+p {
+  line-height: 1.25rem;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+video {  width: 100%;
+  height: auto;
+  overflow: hidden;
+  }
 
 .background {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.main {
+  width: 60%;
+  align-items: flex-start;
+  border: 1px solid blue;
+  background-color: seashell;
+  margin: 1.5rem;
 }
 /*
 .container {
@@ -96,23 +124,17 @@ li {
 /* Learn */
 
 #learn {
-  padding-top:4rem;
+  padding-top:6rem;
   display: flex;
   flex-direction: row;
   background-color: lightPink;
 }
 
 .image-content {
-  width: 60%;
   border: 2px solid red;
-  margin: 2rem 1.5rem;
 }
 
-#learn img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
+
 
 .text-content {
   padding-left: 1.5rem;
@@ -134,54 +156,45 @@ li {
 
 
 
-#practicing  {
+#practicing, #thesis  {
 display: flex;
 
 }
 
-#practicing .main {
-  width: 65%;
-  align-items: flex-start;
-  border: 1px solid blue;
+
+
+#practicing .image-content, #thesis .image-content {
+width: 100%;
+
 }
 
-#practicing .image-content {
-width: 97%;
-}
 
-#practicing img {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-#practicing .text-content {
+#practicing .text-content, #thesis .text-content {
 display: flex;
 align-items: flex-start;
 width: 90%;
 }
 
-#practicing .column-about {
-  width: 40%;
+#practicing .column-about, #thesis .column-about {
+  width: 35%;
   display: flex;
   flex-direction: column;
   justify-content:flex-start;
   margin-top: 1rem;
-  margin-left: 1.5rem;
 
 }
 
-#practicing .about {
+#practicing .about, #thesis .about {
   display: flex;
-  padding: 1rem 1rem;
+  padding: 1rem 0rem;
 }
-#practicing .about .image-content {
+#practicing .about .image-content, #thesis .about .image.content {
   width: 35%;
   margin: 0rem 0rem;
   background-color: pink;
 }
 
-#practicing .about .text-content {
+#practicing .about .text-content, #thesis .about .text-content {
   width: 65%;
   padding: 0rem 1rem;
   text-align: left;
@@ -189,16 +202,15 @@ width: 90%;
   align-items: flex-start;
 }
 
-#practicing .about img {
+#practicing .about img, #thesis .about img {
   width: 100%;
   height: auto;
   overflow: hidden;
 }
 
-#practicing .about p {
+#practicing .about p, #thesis .about p {
   padding: 0.5rem 0rem;
   font-size: 0.9rem;
-  line-height: 1rem;
 }
 
 span.read {
@@ -208,8 +220,38 @@ span.read {
 
 /* COURSES */
 
-#Courses {
+#courses {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2.5rem;
 
+}
+
+
+
+#courses .course{
+  margin: 1rem;
+  border: 1px solid red;
+  width: 27.5%;
+
+}
+
+#courses .course img{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#courses .course .text-content {
+  margin: 1rem;
+  display: flex;
+  align-items: flex-start;
+  background-color: yellow;
+}
+
+#courses .course span {
+  text-align: left;
+  margin: 0.5rem 0rem;
+  background-color: pink;
 }
