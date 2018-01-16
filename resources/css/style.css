@@ -89,6 +89,10 @@ nav {
   background-color: white;
 }
 
+ul.mobile-screen {
+  display: none;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -117,6 +121,21 @@ ul {
 li {
   padding-right: 1rem;
 
+}
+
+@media only screen and (max-width:470px) {
+  ul {display: none;}
+  .logo span {display: none;}
+  ul.mobile-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+  }
+  ul img {
+    width: 3rem;
+    height: auto;
+  }
 }
 
 /* Learn */
@@ -150,7 +169,29 @@ li {
   color: white;
 }
 
+@media only screen and (max-width:470px){
+  #learn{
+    flex-direction: column;
+    justify-content: center;
+  }
+  #learn .main{
+    width: 100%;
+    margin:0rem;
+  }
+  #learn .image-content {
+    width: 100%;
+  }
 
+  #learn h1 {
+    padding: 2rem 1rem;
+  }
+  #learn h3 {
+    padding-bottom: 1.5rem;
+  }
+  #learn .button {
+    margin-bottom: 2rem;
+  }
+}
 
 #practicing, #thesis  {
   display: flex;
@@ -201,6 +242,34 @@ span.read {
   font-size: 0.75rem;
 }
 
+@media only screen and (max-width:470px){
+#practicing .main {
+  display: none;
+}
+#practicing .column-about{
+  width: 100%;
+  padding: 1rem;
+}
+#practicing .about {
+  flex-direction: column;
+  align-items: center;
+}
+#practicing .about .image-content{
+  width: 100%;
+}
+#practicing .about .text-content{
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+#practicing .about .text-content {
+  width: 100%;
+}
+#practicing img {
+
+}
+}
+
 /* COURSES */
 
 #courses {
@@ -228,6 +297,27 @@ span.read {
   margin: 0.5rem 0rem;
 }
 
+#courses.mobile-screen {
+  display: none;
+}
+
+@media only screen and (max-width:470px){
+  #courses {display: none}
+  .courses.mobile-screen {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .courses.mobile-screen h2{
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .courses.mobile-screen h3{
+  padding: 1rem 10rem 1.5rem 1rem;
+  margin-bottom: 0.5rem;
+  background-color: pink;
+  }
+}
+
 #thesis .main {
   margin-top: 0rem;
 }
@@ -235,6 +325,24 @@ span.read {
 #thesis h4{
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.thesis.mobile-screen {
+  display: none;
+}
+
+@media only screen and (max-width:470px){
+  #thesis {
+    display: none;
+  }
+  .thesis.mobile-screen {
+    display:block;
+
+  }
+  .title h2 {
+    margin-bottom:1rem;
+  }
+
 }
 
 footer {
@@ -248,4 +356,10 @@ footer {
 
 footer ul {
   padding-right: 1.5rem;
+}
+
+@media screen only and (max-width:470px){
+  footer ul {
+    display: none;
+  }
 }
