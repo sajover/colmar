@@ -297,7 +297,7 @@ span.read {
   margin: 0.5rem 0rem;
 }
 
-#courses.mobile-screen {
+.courses.mobile-screen {
   display: none;
 }
 
