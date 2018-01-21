@@ -184,6 +184,10 @@ li {
   color: white;
 }
 
+.button:hover{
+  background-color: #2F473D;
+}
+
 @media only screen and (max-width:470px){
   #learn{
     flex-direction: column;
